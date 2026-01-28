@@ -11,7 +11,7 @@
     <nav>
         <a href="#sect">Accueil</a> <br>
         <a href="#sec">iframe</a> <br>
-        <a href="#img">Images</a><br>
+        <a href="#imag">Images</a><br>
         <a href="#formu">Formulaire</a><br>
         <a href="#tabl">Tableau</a>
     </nav>
@@ -68,7 +68,7 @@
     <form action="devoire" method="post">
         <fieldset>
             <legend> A remplir</legend>
-        </fieldset>
+       
             <label for="name">Nom</label>
             <input type="text" name="name" id="name" placeholder="Votre nom" required><br>
             <label for="email">Email</label>   
@@ -82,10 +82,12 @@
                 <option value="Dubreka">Dubreka</option>
                 <option value="Kankan">Kankan</option>
                 <option value="Boke">Boke</option>
-                <option value="Conakry">Conakry</option><br>
+                <option value="Conakry">Conakry</option>
+            </select><br>
             <label for="message">Ton avis</label>
-        <textarea name="Tonavis" id="Tonavis"></textarea><br>
+        <textarea name="Tonavis" id="Tonavis" placeholder="Ton avis" required></textarea><br>
         <input type="submit" value="Validation">
+         </fieldset>
        </form>
         </section>
         <section>
@@ -99,8 +101,9 @@
        </audio>
         </section>
         <section>
-            <h id="tabl">Tableau</h2>
-            <table>
+            <h2 id="tabl">Tableau</h2>
+            <table> 
+                <thead>
                 <tr>
                     <th>Nom </th>
                     <th>Produit </th>
@@ -108,6 +111,8 @@
                     <th> Quantité</th>
                     <th>Total</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>Ibrahim</td>
                     <td>Lampe</td>
@@ -115,6 +120,7 @@
                     <td>6</td>
                     <td>657</td>
                 </tr>
+           
                 <tr>
                     <td>Alhassane</td>
                     <td>Ordi</td>
@@ -122,6 +128,8 @@
                     <td>6</td>
                     <td>342</td>
                 </tr>
+             </tbody>
+             <tfoot>
                 <tr>
                     <td>Abdou</td>
                     <td>Cigarette</td>
@@ -129,6 +137,7 @@
                     <td>2</td>
                     <td>684</td>
                 </tr>
+            </tfoot>
             </table>
         </section>
     </main>
