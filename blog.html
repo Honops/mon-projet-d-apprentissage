@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article de</title>
+</head>
+<body>
+    <h1 id="Debut">Blog professionnel</h1>
+    <header>
+        <section>
+    <h2>Menu</h2>
+    <nav>
+     <ul>
+        <li><a href="#drapeau">Accueil</a></li>
+        <li><a href="#article">Articles</a></li>
+        <li><a href="#multi">multimédia</a></li>
+        <li><a href="#tableau">Statistiques</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+        </section>
+        <section id="drapeau">
+        <h2>Accueil</h2>
+        <p>Les photos d'Espagne vous offrent plus qu'une simple connexion avec des paysages magnifiques et des moments inoubliables. Elles peuvent également servir de source d'inspiration créative pour des dessins.</p>
+        <figure>
+            <img src="./drapeau.jpg" alt="drapeau d'espagne" width="200" height="100">
+            <figcaption>Voici le drapeau d'Espagne</figcaption>
+         </figure>
+     </section>
+    </header>
+
+        <main>
+            <section id="article">
+                <article>
+                    <h2>Article</h2>
+                    <h3>Madrid</h3>
+                        <p>Située au centre de l'Espagne, Madrid, sa capitale, est une ville dotée d'élégants boulevards et de vastes parcs très bien entretenus comme le Retiro. Elle est réputée pour ses riches collections d'œuvres d'art européennes, avec notamment celles du musée du Prado, réalisées par Goya, Velázquez et d'autres maîtres espagnols. Au cœur de la vieille Madrid des Habsbourgs se trouve la Plaza Mayor, bordée de portiques, et, à proximité, le Palais royal baroque et son Armurerie, qui comporte des armes historiques.</p>
+                </article>
+            </section>
+            <section id="multi">
+                <h2>multimédia</h2>
+               <video controls width="200">
+                   <source src="video.mp4" type="video/mp4">
+               </video>
+                <audio controls>
+                   <source src="music.mp3" type="audio/mpeg">
+                </audio>
+            </section>
+            <hr>
+            <section>
+                <h2 id="tableau"> Statistiques de la section (tableau)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Visites </th>
+                            <th> Articles publiés</th>
+                            <th>Commentaires </th>
+                            <th>Pays</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alhassane</td>
+                            <td>Lundi</td>
+                            <td>Le lion</td>
+                            <td>Bien</td>
+                            <td>Espagne</td>
+                        </tr>
+                        <tr>
+                            <td>Moïse</td>
+                            <td>Jeudi</td>
+                            <td>Le batton</td>
+                            <td>Bien</td>
+                            <td>Mali</td>
+                        </tr>
+                        <tr>
+                            <td>Ibrahim</td>
+                            <td>Samedi</td>
+                            <td>Le poisson</td>
+                            <td>Assez-bien</td>
+                            <td>Italie</td>
+                        </tr>
+                        <tr>
+                            <td>Moh</td>
+                            <td>Dimanche</td>
+                            <td>Le ballon</td>
+                            <td>Excellent</td>
+                            <td>Congo</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3"><strong>Observation</strong></td>
+                            <td colspan="2"><em>Signature</em> </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section id="contact">
+                <h2 >Contact</h2>
+                <h3>Formulaire</h3>
+                <form action="formulaire" method="post">
+                    <fieldset>
+                        <legend> Votre enregistrement</legend>
+
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        <br>
+                        <label for="firstname">Prenom</label>
+                        <input type="text" id="firstname" name="firtsname" placeholder="Votre prenom" required>
+                        <br>
+                        <label for="email"> Email</label>  
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                        <br>
+                        <label for="selet">Ville</label>
+                        <select name="selet" id="selet">
+                            <option value="Conakry">Conakry</option>
+                            <option value="Dakar">Dakar</option>
+                            <option value="Barcelona">Barcelona</option>
+                            <option value="Malaga">Malaga</option>
+                            <option value="Boke">Boke</option>
+                            <option value="Kankan">Kankan</option>
+                            <option value="Paris">Paris</option>
+                            <option value="Monaco">Monaco</option>
+                            <option value="Lyon">Lyon</option>
+                            <option value="Madrid">Madrid</option>
+                        </select>
+                        <br>
+                        <label for="Message">Message</label>
+                        <textarea name="Message" id="Message" cols="100" rows="70" placeholder="Votre Opinion" required></textarea>
+                        <br>
+                        <input type="submit" value="Confirmer">
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <h2> Pied de page</h2>
+            <p> <strong>Alhassane <br> Hono <br> Toure</strong></p>
+            <hr>
+           <p>Les origines de la ville ont fait l'objet de révisions historiques constantes. La découverte d'un possible site funéraire wisigothique , aujourd'hui disparu, a conduit certains chercheurs à envisager que l'établissement musulman fortifié de</p>
+           <q>Madrid représentait pour moi le lieu où les films étaient projetés en première exclusivité, mais aussi la métropole où chacun pouvait "vivre sa vie", en définitive : un rêve.</q>
+           <a href="https://es.wikipedia.org/wiki/Madrid">Pour en savoir plus sur Madrid</a>
+           <a href="#Debut">Retour en haut</a>
+        </footer>
+</body>
+</html>
