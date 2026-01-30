@@ -21,14 +21,14 @@ nav a{
     text-decoration: none;
     margin: 8px;
     padding: 6px 12px;
-    background:#4066d ;
+    background: #4066d4;
     border-radius: 5px;
 
 }
-nav a :hover{
+nav a:hover{
     background:#2a4bb8;
 }
-section {
+section{
     background: white;
     margin: 15px;
     padding: 15px;
@@ -46,14 +46,13 @@ li{
 }
 iframe{
     width: 100%;
-    border-collapse: collapse;
     margin-top: 10px;
 }
 th{
     background:#1f3c88 ;
     color: white;
 }
-th td {
+th, td{
     border: 1px solid #333;
 }
 tfoot{
@@ -73,7 +72,7 @@ input , select , textarea {
     border-radius: 5px;
     border: 1px solid #aaa;
 }
-input [type="submit"]:hover{
+input[type="submit"]:hover{
     background:  #4066d4;
 }
 video, audio {
